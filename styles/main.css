@@ -3,6 +3,10 @@ body {
     font-family: Arial;
     margin:0;
 
+    background-image: url("../assets/images/head-background.png");
+    background-size: 100%;
+    background-attachment: fixed;
+
 }
 
 img {
@@ -12,9 +16,11 @@ img {
 .header {
     margin-left: auto;
     margin-right: auto;
+
     width:100%;
-    background-image: url("../assets/images/head-background.png");
-    background-size: 100%;
+    flex: 0 1 auto;
+
+
 }
 
 .header h2 {
@@ -59,11 +65,30 @@ img {
 }
 
 .mainContent {
+    display: flex;
+    flex-flow: column;
+
     text-align: center;
+    color:black;
+
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(24px);
+
+    width: 100%;
+
+    border-top: black 2px;
+    border-top-style: solid;
+
+
 
 }
 
 .mainContent h1 {
     font-size: 400%;
-    margin-top: 15%;
 }
+
+.footer {
+    height: 40px;
+
+}
+

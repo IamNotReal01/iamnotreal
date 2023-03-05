@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
       <meta charset="UTF-8">
       <title>IamNotReal</title>
       <link rel="stylesheet" href="styles/main.css">
       <link rel="icon" href="assets/images/favicon.png">
+
   </head>
-  <body>
-    <div id="head" class="header">
-        <img src="assets/images/iamnotreal.png" class="title" alt="IamNotReal">
+  <body onload="resize(); generateSplash()" onresize="resize()">
+        <div id="head" class="header">
 
-        <!--
-        <table class="navigator">
-            <tr>
-                <td onclick = "document.location='index.html'"
-                        style="width: 50%;">
-                    <p>Home</p>
-                </td>
-                <td onclick="document.location='test.html'"
-                >
-                    <p>Test</p>
-                </td>
-            </tr>
-        </table>
-        -->
+            <img src="assets/images/iamnotreal.png" class="title" alt="IamNotReal">
+            <h2 id="splash">This website is real</h2>
 
-        <h2>This website is real</h2>
-    </div>
-    <div class="mainContent">
-        <h1>This Site is Under Construction</h1>
-    </div>
+            <!--
+            <table class="navigator">
+                <tr>
+                    <td onclick = "document.location='index.html'"
+                            style="width: 50%;">
+                        <p>Home</p>
+                    </td>
+                    <td onclick="document.location='test.html'"
+                    >
+                        <p>Test</p>
+                    </td>
+                </tr>
+            </table>
+            -->
 
 
+        </div>
+        <div class="mainContent" id="mainContent">
+
+            <div
+                    style="background-color: rgba(33,33,33,0.85);
+                    height: 80%; width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 5%;
+                    filter: drop-shadow(4px 5px rgba(0,0,0,0.5));"
+            >
+            <h1 style="color: white; padding-top: 12%">Nothing is here yet.</h1>
+            </div>
+
+        </div>
 
   </body>
+  <script src="scripts/resize.js"></script>
 </html>
