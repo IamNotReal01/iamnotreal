@@ -19,8 +19,6 @@ img {
 
     width:100%;
     flex: 0 1 auto;
-
-
 }
 
 .header h2 {
@@ -29,15 +27,20 @@ img {
     font-family: monospace;
     text-shadow: black 1px 0 3px;
     font-size: 220%;
+    min-height: 80px;
+    margin-top:auto;
+    margin-bottom: auto;
 
 }
 
 .title {
-    width:60%;
-    margin-left: auto;
-    margin-right: auto;
+    width:80%;
+    min-width: 400px;
+    vertical-align: center;
     display: block;
     padding-top: 10px;
+    margin: auto;
+
 }
 
 /* .navigator contains the style for page-navigation-bar */
@@ -65,30 +68,48 @@ img {
 }
 
 .mainContent {
-    display: flex;
-    flex-flow: column;
-
-    text-align: center;
-    color:black;
-
-    background-color: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(24px);
-
+    background-color: rgba(50,50,50,1);
     width: 100%;
-
-    border-top: black 2px;
-    border-top-style: solid;
-
-
-
+    min-height: 80vh;
+    filter: drop-shadow(-4px -5px rgba(0,0,0,0.3));
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .mainContent h1 {
     font-size: 400%;
+
 }
 
 .footer {
     height: 40px;
 
+}
+
+.infoContainer {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(33,33,33,1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.infoContainer div {
+    width: 400px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+}
+
+.infoHeader {
+    margin:20px
 }
 
